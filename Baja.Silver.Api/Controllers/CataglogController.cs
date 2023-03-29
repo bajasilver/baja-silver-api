@@ -8,10 +8,7 @@ namespace Baja.Silver.Api.Controllers
     [Route("[controller]")]
     public class CatalogController : ControllerBase
     {
-        protected override void ExecuteCore()
-        {
-            throw new NotImplementedException();
-        }
+        
     }
 
     [HttpGet]
