@@ -31,5 +31,9 @@ namespace Baja.Silver.Domain.Catalog
         Price = price;
 
         }
+
+        public void AddRating(Rating rating) {
+            this.Ratings.Add(rating);
+        }
     }
 }
