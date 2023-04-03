@@ -1,5 +1,14 @@
-﻿namespace Baja.Silver.Data;
-public class Class1
-{
+﻿using Baja.Silver.Domain.Catalog;
+using Microsoft.EntityFrameworkCore;
 
+namespace Baja.Silver.Data
+{
+    public class StoreContext : DbContext
+    {
+        public StoreContext(DbContextOptions<StoreContext> options)
+            : base(options)
+            { }
+
+            public DbSet<Item> Items { get; set;}
+    }
 }
