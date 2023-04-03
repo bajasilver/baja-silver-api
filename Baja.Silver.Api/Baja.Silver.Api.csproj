@@ -13,6 +13,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Baja.Silver.Domain\Baja.Silver.Domain.csproj" />
+    <ProjectReference Include="..\Baja.Silver.Data\Baja.Silver.Data.csproj" />
   </ItemGroup>
 
 </Project>
