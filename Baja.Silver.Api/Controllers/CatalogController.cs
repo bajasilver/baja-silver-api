@@ -4,7 +4,8 @@ using Baja.Silver.Data;
 
 namespace Baja.Silver.Api.Controllers {
     [ApiController]
-    [Route("[controller]")]
+    //[Route("[controller]")]
+    [Route("/catalog")]
     public class CatalogController : ControllerBase 
     {
         private readonly StoreContext _db;
@@ -21,10 +22,17 @@ namespace Baja.Silver.Api.Controllers {
         [HttpGet("{id:int}")]
         public IActionResult GetItem(int id) 
         {
-            var item = new Item("Shirt", "Ohio State shirt.", "Nike", 29.99m);
-            item.Id = id;
+            // var item = new Item("Shirt", "Ohio State shirt.", "Nike", 29.99m);
+            // item.Id = id;
 
-            return Ok(item);
+            var item = _db.Items.Find(id);
+            if (item == null) 
+            {
+                return NotFound();
+            }
+
+            //return Ok(_db.Items.Find(id));
+            return Ok();
         }
         [HttpPost]
         public IActionResult Post(Item item) {
