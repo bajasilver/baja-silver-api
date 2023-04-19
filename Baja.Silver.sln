@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Baja.Silver.Api", "Baja.Sil
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Baja.Silver.Domain", "Baja.Silver.Domain\Baja.Silver.Domain.csproj", "{0B43569C-B390-45DD-AE7A-5795B3551320}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{304B7784-39D0-4CE0-8C9B-2F57BE2D3132}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Baja.Silver.Domain.Tests", "tests\Baja.Silver.Domain.Tests\Baja.Silver.Domain.Tests.csproj", "{40D32C1D-7D38-46E7-8C08-C70B8FC22C58}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +28,12 @@ Global
 		{0B43569C-B390-45DD-AE7A-5795B3551320}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0B43569C-B390-45DD-AE7A-5795B3551320}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0B43569C-B390-45DD-AE7A-5795B3551320}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40D32C1D-7D38-46E7-8C08-C70B8FC22C58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40D32C1D-7D38-46E7-8C08-C70B8FC22C58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40D32C1D-7D38-46E7-8C08-C70B8FC22C58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40D32C1D-7D38-46E7-8C08-C70B8FC22C58}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{40D32C1D-7D38-46E7-8C08-C70B8FC22C58} = {304B7784-39D0-4CE0-8C9B-2F57BE2D3132}
 	EndGlobalSection
 EndGlobal
