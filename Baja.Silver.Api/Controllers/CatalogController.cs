@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 using Baja.Silver.Domain.Catalog;
 using Baja.Silver.Data;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Baja.Silver.Api.Controllers {
     [ApiController]
@@ -91,6 +92,7 @@ namespace Baja.Silver.Api.Controllers {
         // }
 
         [HttpDelete("{id:int}")]
+        [Authorize("delete:catalog")]
         public IActionResult DeleteItem(int id)
         {
             var item = _db.Items.Find(id);
