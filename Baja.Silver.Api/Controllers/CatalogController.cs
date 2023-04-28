@@ -2,7 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 using Baja.Silver.Domain.Catalog;
 using Baja.Silver.Data;
 using Microsoft.EntityFrameworkCore;
-using Baja.Silver.Api.Security;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Baja.Silver.Api.Controllers {
     [ApiController]
